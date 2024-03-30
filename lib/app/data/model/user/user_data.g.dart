@@ -1,19 +1,17 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'credential_data.dart';
+part of 'user_data.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-CredentialData _$CredentialDataFromJson(Map<String, dynamic> json) =>
-    CredentialData(
+UserData _$UserDataFromJson(Map<String, dynamic> json) => UserData(
       username: json['username'] as String,
       password: json['password'] as String,
     );
 
-Map<String, dynamic> _$CredentialDataToJson(CredentialData instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$UserDataToJson(UserData instance) => <String, dynamic>{
       'username': instance.username,
       'password': instance.password,
     };

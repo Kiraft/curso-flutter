@@ -97,7 +97,7 @@ class LoginPage extends GetView<LoginController> {
                           constraints: const BoxConstraints.expand(height: 50),
                           child: TextButton(
                             onPressed: () {
-                              loginControlller.validatedCredentials();
+                              loginControlller.loginUser();
                             },
                             style: ButtonStyle(
                               backgroundColor: const MaterialStatePropertyAll(
