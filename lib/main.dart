@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/app/bindings/login_binding.dart';
+import 'package:flutter_application_1/app/bindings/menus_binding.dart';
 import 'package:flutter_application_1/app/routes/pages.dart';
 import 'package:flutter_application_1/app/ui/themes/light_theme.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -10,10 +10,10 @@ void main() async {
   await GetStorage.init();
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: Routes.INITIAL,
+    initialRoute: Routes.LOGIN,
     theme: appThemeData,
     defaultTransition: Transition.fade,
-    initialBinding: LoginBinding(),
+    initialBinding: MenusBinding(),
     getPages: AppPages.pages,
     builder: (context, widget) {
       widget = EasyLoading.init()(context, widget);
